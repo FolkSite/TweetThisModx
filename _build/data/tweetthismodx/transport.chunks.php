@@ -28,8 +28,12 @@ $chunks = array();
 $chunks[1] = $modx->newObject('modChunk');
 $chunks[1]->fromArray(array (
   'id' => 1,
-  'description' => 'Description for TweetThisModx Chunk',
+  'property_preprocess' => false,
   'name' => 'TweetThisChunk',
+  'description' => 'Description for TweetThisModx Chunk',
+  'properties' => 
+  array (
+  ),
 ), '', true, true);
 $chunks[1]->setContent(file_get_contents($sources['source_core'] . '/elements/chunks/tweetthischunk.chunk.html'));
 

@@ -27,32 +27,32 @@ $systemSettings = array();
 
 $systemSettings[1] = $modx->newObject('modSystemSetting');
 $systemSettings[1]->fromArray(array (
-  'key' => 'tweetthismodx.enabled',
-  'name' => 'TweetThisModx Enabled',
-  'description' => 'Global Enable & Disable',
+  'key' => 'tweetthismodx.link_class',
+  'value' => 'ttm_link',
+  'xtype' => 'textfield',
   'namespace' => 'tweetthismodx',
-  'xtype' => 'combo-boolean',
-  'value' => 1,
-  'area' => 'tweetthismodx',
+  'area' => 'area1',
+  'name' => 'CSS Link Class',
+  'description' => 'CSS Class can be overridden when called in Chunks',
 ), '', true, true);
 $systemSettings[2] = $modx->newObject('modSystemSetting');
 $systemSettings[2]->fromArray(array (
-  'key' => 'tweetthismodx.highlight_class',
-  'name' => 'CSS Hightlight Class',
-  'description' => 'CSS Class can be overridden when called in Chunks',
+  'key' => 'tweetthismodx.enabled',
+  'value' => '1',
+  'xtype' => 'combo-boolean',
   'namespace' => 'tweetthismodx',
-  'xtype' => 'textfield',
-  'value' => 'ttm_highlight',
-  'area' => 'tweetthismodx',
+  'area' => 'area1',
+  'name' => 'TweetThisModx Enabled',
+  'description' => 'Global Enable & Disable',
 ), '', true, true);
 $systemSettings[3] = $modx->newObject('modSystemSetting');
 $systemSettings[3]->fromArray(array (
-  'key' => 'tweetthismodx.link_class',
-  'name' => 'CSS Link Class',
-  'description' => 'CSS Class can be overridden when called in Chunks',
-  'namespace' => 'tweetthismodx',
+  'key' => 'tweetthismodx.highlight_class',
+  'value' => 'ttm_highlight',
   'xtype' => 'textfield',
-  'value' => 'ttm_link',
-  'area' => 'tweetthismodx',
+  'namespace' => 'tweetthismodx',
+  'area' => 'area1',
+  'name' => 'CSS Hightlight Class',
+  'description' => 'CSS Class can be overridden when called in Chunks',
 ), '', true, true);
 return $systemSettings;

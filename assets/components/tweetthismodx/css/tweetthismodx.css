@@ -2,7 +2,19 @@
  * CSS file for TweetThisModx extra
  *
  * Copyright 2016 by Daniel Harding hello@stuntrocket.co
- * Created on 10-07-2016
+ * Created on 10-06-2016
  *
  * @package tweetthismodx
  */
+ .ttm_highlight {
+   background-color: #4099FF;
+   padding: 1px 4px;
+   color: #ffffff;
+ }
+
+ a.ttm_link {
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  font-size: 11px;
+  color: #222;
+}

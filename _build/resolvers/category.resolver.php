@@ -51,7 +51,7 @@ if ($object->xpdo) {
             $intersects = array (
                 'StuntRocket' =>  array (
                   'category' => 'StuntRocket',
-                  'parent' => '0',
+                  'parent' => '',
                 ),
                 'TweetThisModx' =>  array (
                   'category' => 'TweetThisModx',

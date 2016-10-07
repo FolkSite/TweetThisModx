@@ -30,5 +30,6 @@ $propertySets[1]->fromArray(array (
   'id' => 1,
   'name' => 'TweetThisModx',
   'description' => 'TweetThisModx Chunk Properties',
+  'properties' => NULL,
 ), '', true, true);
 return $propertySets;

@@ -16,13 +16,13 @@ $components = array(
     'packageName' => 'TweetThisModx',  /* No spaces, no dashes */
     'packageNameLower' => $packageNameLower,
     'packageDescription' => 'TweetThisModx for Social Marketers',
-    'version' => '1.1.6',
+    'version' => '1.2.1',
     'release' => 'beta1',
     'author' => 'Daniel Harding',
     'email' => 'hello@stuntrocket.co',
     'authorUrl' => 'https://stuntrocket.co',
     'authorSiteName' => "StuntRocket",
-    'packageDocumentationUrl' => 'https://stuntrocket.co/code/tweetthismodx',
+    'packageDocumentationUrl' => 'http://stuntrocket.app/code/modx/tweetthismodx.html',
     'copyright' => '2016',
 
     /* no need to edit this except to change format */
@@ -63,6 +63,7 @@ $components = array(
             'namespace' => 'tweetthismodx',
             'xtype' => 'combo-boolean',
             'value' => 1,
+            'area' => 'Site',
         ),
         'TweetThisModxHighlightClass' => array( // key
             'key' => 'tweetthismodx.highlight_class',
@@ -71,6 +72,7 @@ $components = array(
             'namespace' => 'tweetthismodx',
             'xtype' => 'textfield',
             'value' => 'ttm_highlight',
+            'area' => 'Site',
         ),
         'TweetThisModxLinkClass' => array( // key
             'key' => 'tweetthismodx.link_class',
@@ -79,6 +81,7 @@ $components = array(
             'namespace' => 'tweetthismodx',
             'xtype' => 'textfield',
             'value' => 'ttm_link',
+            'area' => 'Site',
         ),
     ),
 
@@ -132,14 +135,6 @@ $components = array(
     */
 
     'categories' => array(
-      'StuntRocket' => array(
-          'category' => 'StuntRocket',
-          'parent' => '', /* nested under Example */
-      ),
-      'TweetThisModx' => array(
-          'category' => 'TweetThisModx',
-          'parent' => 'StuntRocket',  /* top level category */
-      ),
     ),
 
     /* *************************** MENUS ****************************** */

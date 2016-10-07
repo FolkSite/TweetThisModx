@@ -1,6 +1,5 @@
 <?php
 $cats = array (
-  0 => 'StuntRocket',
-  1 => 'TweetThisModx',
+  0 => 'TweetThisModx',
 );
 return $cats;

@@ -39,10 +39,10 @@ $data = array();
 
 /* setup default properties */
 $tpl  = $modx->getOption('tpl', $scriptProperties, 'TweetThisChunk');
-$text  = $modx->getOption('text', $scriptProperties, 'Tweet This!');
+$text  = $modx->getOption('text', $scriptProperties, 'Tweet This Text!');
 
 $enabled = $modx->getOption('tweetthismodx.enabled', null, 'yes');
-if(strtolower($enabled) !== 'yes' && $enabled !== 1) {
+if(empty($enabled)) {
   return $text;
 }
 
