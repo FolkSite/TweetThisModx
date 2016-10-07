@@ -57,7 +57,7 @@ If you would like to use you own class names, head into your MODX System Setting
 
 **tweetthismodx.link_class** (Default: ttm_link)
 
-Respectively these affect the text itself (eg you could add a Twitter blue background colour), and the button (you might want the text larger or smaller).
+Respectively these affect the text and the button.
 
 If you don't know what CSS styling is or how to edit CSS files, you'll probably want to leave this alone or ask a developer to help you.
 
