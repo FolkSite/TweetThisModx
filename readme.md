@@ -3,8 +3,6 @@
 
 **Author:** Daniel Harding hello@stuntrocket.co [StuntRocket](https://stuntrocket.co)
 
-Documentation is available at: [TweetThisMODX Documentation](http://stuntrocket.app/code/modx/tweetthismodx.html)
-
 [GitHub Repository](https://github.com/stuntrocket/TweetThisModx)
 
 

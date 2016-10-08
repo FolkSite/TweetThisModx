@@ -1,5 +1,5 @@
 Changelog for TweetThisModx
 
-TweetThisModx 1.0.0
+TweetThisModx 1.2.2
 ---------------------------------
 Initial Version

@@ -16,13 +16,13 @@ $components = array(
     'packageName' => 'TweetThisModx',  /* No spaces, no dashes */
     'packageNameLower' => $packageNameLower,
     'packageDescription' => 'TweetThisModx for Social Marketers',
-    'version' => '1.2.1',
+    'version' => '1.2.2',
     'release' => 'beta1',
     'author' => 'Daniel Harding',
     'email' => 'hello@stuntrocket.co',
     'authorUrl' => 'https://stuntrocket.co',
     'authorSiteName' => "StuntRocket",
-    'packageDocumentationUrl' => 'http://stuntrocket.app/code/modx/tweetthismodx.html',
+    'packageDocumentationUrl' => 'https://github.com/stuntrocket/TweetThisModx',
     'copyright' => '2016',
 
     /* no need to edit this except to change format */
