@@ -23,62 +23,78 @@
 <a id="tweetthismodx-extra" class="anchor" href="#tweetthismodx-extra" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>TweetThisModx Extra</h1>
 
 
-<h2 id="toc_1">For Content &amp; Social Marketers</h2>
+<h2 id="toc_0">For Content &amp; Social Marketers</h2>
 
-<p>A great way for content and social media marketers to get their work shared is to use a technique known as TweetThis. A Tweet link around a compelling, noteworthy or shareworthy block of copy text, that makes it easy for the user to Tweet it, sharing your fantastic content.</p>
+<p><span class="tweetthis">A great way for content and social media marketers to get their work shared is to use a technique known as TweetThis</span>. A Tweet link around a compelling, noteworthy or shareworthy block of copy text, that makes it easy for the user to Tweet it, sharing your fantastic content.</p>
 
 <p>What&#39;s great is that the functionality sits within your copy text layout, so it can be used frequently on a page without disrupting the layout. An example use might be on a title or quote. </p>
 
-<h2 id="toc_2">Demo</h2>
+<h2 id="toc_1">Demo</h2>
 
-<p><a href="https://stuntrocket.co/code/modx/tweetthismodx.html">https://stuntrocket.co/code/modx/tweetthismodx.html</a></p>
+<p>See above.</p>
 
-<h2 id="toc_3">Install via Package Manager</h2>
+<h2 id="toc_2">Install via Package Manager</h2>
 
 <p>Search Package Manager for &quot;TweetThisModx&quot; and then download and install.</p>
 
-<h2 id="toc_4">Usage</h2>
+<h2 id="toc_3">Usage</h2>
 
-<p>In the Chunk or Template where you want to show a &quot;TweetThis&quot; button and associated block of text use:</p>
+<p>In the Chunk or Template where you want to show a &quot;TweetThis&quot; button next to a block of text:</p>
 
-<pre><code>[[TweetThis? &amp;text=`Put Your Text In Here...`]]
+<pre><code>[[TweetThis? &amp;text=`Your Tweetable Text Here`]]
 </code></pre>
 
-<p>This will display your text with a small button next to it. When clicked the button will open a Tweet dialogue in the user&#39;s browser with the text and URL inserted ready for them to click &quot;Tweet&quot;.</p>
+<p>This will display your text with a small button next to it. When clicked the button will open a Tweet dialogue in the user&#39;s browser with the text and URL inserted ready for them to Tweet.</p>
 
-<h2 id="toc_5">Dependencies</h2>
+<h2 id="toc_4">Dependencies</h2>
 
-<p>TweetThis does not have any dependencies (e.g JQuery not needed) because it uses native Javascript to keep things as light as possible.</p>
+<p>TweetThisMODX depends on MODX. JQuery is not needed because it uses native Javascript.</p>
 
-<h2 id="toc_6">Enable &amp; Disable</h2>
+<h2 id="toc_5">Enable &amp; Disable</h2>
 
-<p>If you want to globally disable TweetThisModx, head into your MODX System Settings and within the TweetThisModx Namespace look for <strong>&quot;tweetthismodx.enabled&quot;</strong>. Set this to <strong>&quot;No&quot;</strong> to disable the plugin for the entire sight.</p>
+<p>If you want to globally disable TweetThisModx, head into your MODX System Settings and within the TweetThisModx Namespace look for <strong>tweetthismodx.enabled</strong>. Set this to <strong>No</strong> to disable the plugin for the entire site.</p>
 
 <p>Disabling the plugin this way does not disrupt your text, it just removes the button.</p>
 
-<h2 id="toc_7">CSS Styling</h2>
+<h2 id="toc_6">CSS Styling</h2>
 
-<p>The idea with &quot;Tweet This&quot; functionality is that it sits within your regular copy text, perhaps on a share-worthy title or quote. For this reason the styling is minimal - so it fits in.</p>
+<p>The idea with &quot;Tweet This&quot; functionality is that it sits within your regular copy text. For this reason the styling is minimal - so it fits in.</p>
 
 <p>If you do want to style the text or button element they have each have a CSS class that you can target in your stylesheets.</p>
 
 <p>If you would like to use you own class names, head into your MODX System Settings and look for the following two Settings in the TweetThisModx Namespace:</p>
 
-<p><strong>tweetthismodx.highlight_class</strong> (Default: ttm_highlight)</p>
-
-<p><strong>tweetthismodx.link_class</strong> (Default: ttm_link)</p>
+<p><strong>tweetthismodx.highlight_class</strong> (Default: ttm_highlight)<br/>
+<strong>tweetthismodx.link_class</strong> (Default: ttm_link)</p>
 
 <p>Respectively these affect the text and the button.</p>
 
+<p>Advanced usage with custom CSS classes defined on page/template/chunk.</p>
+
+<pre><code>[[TweetThis?
+  &amp;text=`Tweetable Text`
+  &amp;highlight_class=`my_highlight_class`
+  &amp;link_class=`my_link_class`
+]]
+</code></pre>
+
 <p>If you don&#39;t know what CSS styling is or how to edit CSS files, you&#39;ll probably want to leave this alone or ask a developer to help you.</p>
 
-<h2 id="toc_8">Problems</h2>
+<h2 id="toc_7">Problems</h2>
 
-<p>Any problems please create an issue on GitHub.</p>
+<p>If there are any problems, please create an issue on the <a href="https://github.com/stuntrocket/TweetThisModx">GitHub Repository</a></p>
 
-<p>
-  <a href="https://stuntrocket.github.io/TweetThisModx/">TweetThisMODX on GitHub</a>
-</p>
+<h3 id="toc_8">Project &amp; Author:</h3>
+
+<p><a href="https://stuntrocket.github.io/TweetThisModx/">TweetThisMODX Project Home</a><br/>
+<a href="https://stuntrocket.co">Author Home - StuntRocket</a><br/>
+<a href="https://stuntrocket.github.io">StuntRocket on GitHub</a></p>
+
+<h3 id="toc_9">MODX</h3>
+
+<p>MODX CMS can be downloaded here:<br/>
+<a href="http://modx.com">MODX CMS Home</a></p>
+
 
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/stuntrocket/TweetThisModx">Tweetthismodx</a> is maintained by <a href="https://github.com/stuntrocket">stuntrocket</a>.</span>
