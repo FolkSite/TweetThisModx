@@ -1,14 +1,14 @@
 
 ##For Content & Social Marketers!
 
-<span class="tweetthis">A great way for content and social media marketers to get their work shared is to use a technique known as TweetThis</span>. A Tweet link around a compelling, noteworthy or shareworthy block of copy text, that makes it easy for the user to Tweet it, sharing your fantastic content.
+A great way for content and social media marketers to get their work shared is to use a technique known as TweetThis. A Tweet link around a compelling, noteworthy or shareworthy block of copy text, that makes it easy for the user to Tweet it, sharing your fantastic content.
 
 What's great is that the functionality sits within your copy text layout, so it can be used frequently on a page without disrupting the layout. An example use might be on a title or quote.
 
 
 ##Demo
 
-See above.
+[TweetThisMODX Project Home](https://stuntrocket.github.io/TweetThisModx/)
 
 ## Install via Package Manager
 
@@ -67,10 +67,14 @@ If there are any problems, please create an issue on the [GitHub Repository](htt
 ###Project & Author:
 
 [TweetThisMODX Project Home](https://stuntrocket.github.io/TweetThisModx/)
+
 [Author Home - StuntRocket](https://stuntrocket.co)
+
 [StuntRocket on GitHub](https://stuntrocket.github.io)
+
 
 ###MODX
 
 MODX CMS can be downloaded here:
+
 [MODX CMS Home](http://modx.com)
