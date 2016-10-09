@@ -6,15 +6,36 @@
  *
  * @package tweetthismodx
  */
+ .ttm_underline {
+   border-bottom: 2px solid #4099FF;
+   padding-bottom: 1px;
+ }
+
  .ttm_highlight {
    background-color: #4099FF;
    padding: 1px 4px;
    color: #ffffff;
  }
 
- a.ttm_link {
+ a.ttm_link_text {
   text-decoration: none;
   font-family: Arial, sans-serif;
   font-size: 11px;
   color: #222;
+}
+
+ a.ttm_link {
+    background-image: url(../images/twitter.png);
+    background-size: 16px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-clip: border-box;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    text-decoration: none;
+    cursor: pointer;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space:nowrap;
 }

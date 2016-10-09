@@ -52,8 +52,8 @@ $myCorePath = $modx->getOption('tweetthismodx.core_path',null,$defaultCorePath);
 $defaultAssetsPath = $modx->getOption('assets_url').'components/tweetthismodx/';
 $myAssetsPath = $modx->getOption('tweetthismodx.assets_url', null, $defaultAssetsPath);
 
-$defaultKlass = $modx->getOption('tweetthismodx.highlight_class', null, 'ttm_highlight');
-$klass  = $modx->getOption('class', $scriptProperties, $defaultKlass);
+$defaultKlass = $modx->getOption('tweetthismodx.highlight_class', null, 'ttm_underline');
+$klass  = $modx->getOption('text_class', $scriptProperties, $defaultKlass);
 
 $defaultLinkKlass = $modx->getOption('tweetthismodx.link_class', null, 'ttm_link');
 $link_klass  = $modx->getOption('link_class', $scriptProperties, $defaultLinkKlass);
@@ -71,10 +71,12 @@ $url = $scheme . $sn . $ru;
 $modx->regClientCSS($myAssetsPath.'css/tweetthismodx.css');
 $modx->regClientScript($myAssetsPath . 'js/tweetthismodx-min.js');
 
+$safe_text = addslashes($text);
+
 $data['class'] = $klass;
 $data['link_class'] = $link_klass;
 $data['text'] = $text;
 $data['href'] = "javascript:void(0);";
-$data['onclick'] = "return tweetThisModx('$text', '$url')";
+$data['onclick'] = "return tweetThisModx('$safe_text', '$url')";
 
 return $modx->getChunk($tpl, $data);

@@ -63,6 +63,7 @@
 
 <p>Demo above.</p>
 
+
 <h2 id="toc_2">Install via Package Manager</h2>
 
 <p>Search Package Manager for &quot;TweetThisModx&quot; and then download and install.</p>
@@ -86,35 +87,72 @@
 
 <p>Disabling the plugin this way does not disrupt your text, it just removes the button.</p>
 
-<h2 id="toc_6">CSS Styling</h2>
+<h2 id="toc_6">On Page Styling</h2>
 
-<p>The idea with &quot;Tweet This&quot; functionality is that it sits within your regular copy text. For this reason the styling is minimal - so it fits in.</p>
+<h4 id="toc_7">Both of the main elements (text and link) have two basic styling options.</h4>
+
+<p>The text can have a Twitter blue background or a Twitter blue underline. <br/>
+The link can be text (Tweet This), or a Twitter icon. The examples below show the four style options that are available. </p>
+
+<p>
+<span class="ttm_outer">
+<span class="ttm_underline">A great way for content and social media marketers to get their work shared is to use a TweetThis technique.</span>
+<a href="javascript:void(0);" onclick="return tweetThisModx('A great way for content and social media marketers to get their work shared is to use a TweetThis technique.', 'https://stuntrocket.github.io/TweetThisModx/')" class="ttm_link">Tweet This</a>
+</span>
+</p>
+
+<pre><code>[[TweetThis?
+  &amp;text=`My Text Don&#39;t`
+  &amp;text_class=`ttm_highlight`
+  &amp;link_class=`ttm_link_text`
+]]
+</code></pre>
+
+<pre><code>[[TweetThis?
+  &amp;text=`My Text`
+  &amp;text_class=`ttm_underline`
+  &amp;link_class=`ttm_link_text`
+]]
+</code></pre>
+
+<pre><code>[[TweetThis?
+  &amp;text=`My Text`
+  &amp;text_class=`ttm_highlight`
+  &amp;link_class=`ttm_link`
+]]
+</code></pre>
+
+<pre><code>[[TweetThis?
+  &amp;text=`My Text`
+  &amp;text_class=`ttm_underline`
+  &amp;link_class=`ttm_link`
+]]
+</code></pre>
+
+<p>You can use multiple style configurations on the same page.</p>
+
+<h2 id="toc_8">Custom CSS Classes</h2>
+
+<p>The idea with &quot;Tweet This&quot; functionality is that it sits within your regular copy text. For this reason the styling is minimal.</p>
 
 <p>If you do want to style the text or button element they have each have a CSS class that you can target in your stylesheets.</p>
 
-<p>If you would like to use you own class names, head into your MODX System Settings and look for the following two Settings in the TweetThisModx Namespace:</p>
+<p>If you would like to use your own default class names, head into your MODX System Settings and look for the following two Settings in the TweetThisModx Namespace:</p>
 
 <p><strong>tweetthismodx.highlight_class</strong> (Default: ttm_highlight)<br/>
 <strong>tweetthismodx.link_class</strong> (Default: ttm_link)</p>
 
-<p>Respectively these affect the text and the button.</p>
+<p>Respectively these affect the text and the button. Obviously you&#39;ll need to create the corresponding CSS declarations in your own stylesheet.</p>
 
 <p>Advanced usage with custom CSS classes defined on page/template/chunk.</p>
 
-<pre><code>[[TweetThis?
-  &amp;text=`Tweetable Text`
-  &amp;highlight_class=`my_highlight_class`
-  &amp;link_class=`my_link_class`
-]]
-</code></pre>
-
 <p>If you don&#39;t know what CSS styling is or how to edit CSS files, you&#39;ll probably want to leave this alone or ask a developer to help you.</p>
 
-<h2 id="toc_7">Problems</h2>
+<h2 id="toc_9">Problems</h2>
 
 <p>If there are any problems, please create an issue on the <a href="https://github.com/stuntrocket/TweetThisModx">GitHub Repository</a></p>
 
-<h3 id="toc_8">Project &amp; Author:</h3>
+<h3 id="toc_10">Project &amp; Author:</h3>
 
 <p><a href="https://stuntrocket.github.io/TweetThisModx/">TweetThisMODX Project Home</a></p>
 
@@ -122,11 +160,12 @@
 
 <p><a href="https://stuntrocket.github.io">StuntRocket on GitHub</a></p>
 
-<h3 id="toc_9">MODX</h3>
+<h3 id="toc_11">MODX</h3>
 
 <p>MODX CMS can be downloaded here:</p>
 
 <p><a href="http://modx.com">MODX CMS Home</a></p>
+
 
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/stuntrocket/TweetThisModx">Tweetthismodx</a> is maintained by <a href="https://github.com/stuntrocket">stuntrocket</a>.</span>
